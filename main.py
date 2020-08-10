@@ -48,7 +48,7 @@ def error(update, context):
 
 def main():
     try:
-        TOKEN = '1313618030:AAFf2bcFIbw4h_WGIwn7gb-WcPteOdzDWjA'
+        TOKEN = token
     except IndexError:
         TOKEN = os.environ.get("TOKEN")
     updater = Updater(TOKEN, use_context=True)
